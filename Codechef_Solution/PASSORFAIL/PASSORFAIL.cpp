@@ -7,7 +7,8 @@ int main(){
 
     while(t--){
         int n,x,p;
-        int total_marks = (n-x)*3 - x;
+        cin>>n>>x>>p;
+        int total_marks = (x*3)-(n-x);
 
         if(total_marks>=p){
             cout<<"Pass";
@@ -15,7 +16,6 @@ int main(){
         else    cout<<"Fail";
 
         cout<<endl;
-
-        return 0;
     }
+    return 0;
 }
