@@ -9,8 +9,8 @@ int main(){
         int x1,y1,x2,y2;
         cin>>x1>>y1>>x2>>y2;
 
-        int d1 = sqrt((pow(x1,2)+pow(y1,2)));
-        int d2 = sqrt(pow(x2,2)+pow(y2,2));
+        float d1 = sqrt((pow(x1,2)+pow(y1,2)));
+        float d2 = sqrt(pow(x2,2)+pow(y2,2));
 
         if(d1>d2){
             cout<<"Alex"<<endl;

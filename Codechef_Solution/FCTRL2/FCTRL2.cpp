@@ -1,5 +1,7 @@
 #include<bits/stdc++.h>
+#include <boost/multiprecision/cpp_int.hpp>
 using namespace std;
+using namespace boost::multiprecision;
 
 int main(){
     int t;
@@ -9,7 +11,7 @@ int main(){
         int n;
         cin>>n;
         
-        int fact = 1;
+        cpp_int fact = 1;
         for (int i = 1; i <= n; i++)
         {
             fact*=i;
