@@ -16,5 +16,20 @@ int main(){
             v.push_back(temp);
         }
         
+        bool temp=true;
+        for(int i=0;i<v.size();i++){
+            if(v[i]!=v[(v.size())-i-1]){
+                // cout<<v[i]<<endl;
+                // cout<<v[(v.size())-i-1]<<endl;
+                temp=false;
+                break;
+            }
+        }
+
+        if(temp==true){
+            cout<<"wins"<<endl;
+        }
+        else    cout<<"loses"<<endl;
+        
     }
 }
