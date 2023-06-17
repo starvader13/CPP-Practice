@@ -6,11 +6,12 @@ int main(){
     cin>>t;
 
     while(t--){
-        int a,b;
-        cin>>a>>b;
+        int x,y,z;
+        cin>>x>>y>>z;
 
-        if((a+b)%2==0){
-            cout<<"Yes"  <<endl;
+        int sum=x+y+z;
+        if(sum>5){
+            cout<<"Yes"<<endl;
         }
         else    cout<<"No"<<endl;
     }
