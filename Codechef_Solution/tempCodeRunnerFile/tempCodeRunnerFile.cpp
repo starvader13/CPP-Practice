@@ -1,23 +1,26 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-int main(){
-    int t;
-    cin>>t;
+int main() {
+	int t;
+	cin>>t;
+	
+	while(t--){
+	    int n;
+        cin>>n;
 
-    while(t--){
-        int l,r;
-        cin>>l>>r;
-        int count =0;
-
-        for (int i = l; i <= r; i++)
+        vector<int> v;
+        for (int i = 0; i < n; i++)
         {
-            if(i%10==2 || i%10==3 | i%10==9){
-                count++;
-            }
+            int temp;
+            cin>>temp;
+
+            v.push_back(temp);
         }
 
-        cout<<count<<endl;
-        
-    }
+        sort(v.begin(),v.end(),greater<int>());
+
+        cout<<v[0]+v[1]<<endl;
+	}
+	return 0;
 }
