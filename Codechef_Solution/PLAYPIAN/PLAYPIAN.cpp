@@ -22,17 +22,18 @@ int main() {
             if(i%2==0){
                 if((s[i]=='A' && s[i+1]=='A') || (s[i]=='B' && s[i+1]=='B')){
                     temp=false;
+                    continue;
                 }
             }
         }
 
         if(temp==true){
             if(temp_a==temp_b){
-                cout<<"Yes"<<endl;
+                cout<<"yes"<<endl;
             }
-            else    cout<<"No"<<endl;
+            else    cout<<"no"<<endl;
         }
-        else    cout<<"No"<<endl;
+        else cout<<"no"<<endl;
     }
 	return 0;
 }
