@@ -11,19 +11,19 @@ int main() {
     
     switch(c){
         case '+':{
-            cout<<std::setprecision(3)<<(a+b)<<endl;
+            cout<<std::setprecision(9)<<(a+b)<<endl;
             break;
         }
         case '-':{
-            cout<<std::setprecision(3)<<(a-b)<<endl;
+            cout<<std::setprecision(9)<<(a-b)<<endl;
             break;
         }
         case '*':{
-            cout<<std::setprecision(3)<<(a*b)<<endl;
+            cout<<std::setprecision(9)<<(a*b)<<endl;
             break;
         }
         case '/':{
-            cout<<std::setprecision(3)<<(a/b)<<endl;
+            cout<<std::setprecision(9)<<(a/(b*1.0))<<endl;
             break;
         }
         default: break;
